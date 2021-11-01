@@ -1,0 +1,8 @@
+const Cart = require("./index")
+const c = new Cart()
+console.log(c.addItem("Hello"))
+console.log(c.addItem("HeLlo"))
+console.log(c.addItem("Privet"))
+console.log(c.getAllItems())
+console.log(c.removeItem("hEllo", 1))
+console.log(c.getAllItems())
