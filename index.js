@@ -35,6 +35,7 @@ class Cart {
     }
 
     removeItem(itemName, count = 1) {
+        if (count <= 0) return false
         const itemIndex = this.findItem(itemName)
         if (itemIndex >= 0) {
             const item = this.items[itemIndex]
